@@ -9,6 +9,8 @@ void bfs(vector<int> adj[], int src) {
 
   queue<int> q;
   q.push(src);
+  // visit src
+  vis[src] = 1;
   while (!q.empty()) {
 
     int node = q.front();
